@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="module" src="/js/blogPost.js" async></script>
+    <link rel="stylesheet" href="/css/frontPage.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link href="https://fonts.cdnfonts.com/css/comic-cup" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Solitreo&family=Pangolin&family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/skynight" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <img src="/assets/cardeniLogo.png">
+            <div class="nav-links">
+                <a href="/blog.html">Início</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="blog-post" id="blogPost"></article>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+
+    <script>
+        function mostraSpoiler(){
+            if(document.getElementById('spoiler').style.filter == "blur(0px)"){
+                document.getElementById('spoiler').style.cssText = "filter: blur(var(--pixelBlur));"
+            } else {
+                document.getElementById('spoiler').style.cssText = "filter: blur(0px);"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+

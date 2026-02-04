@@ -1,0 +1,77 @@
+:root {
+  --wPostIt: 105%;
+  --hPostIt: 105%;
+}
+
+body{
+    background: url("../assets/papelCaneladoSemLinha.png") 0px 0px/40%;
+}
+
+a{  
+    text-decoration: none;
+    font-family: "Comic Cup";
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+article{
+    margin-left: 20px;
+}
+
+article h1{
+    margin-bottom: 0px;
+}
+
+.nav-links a{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.blog-card{
+    background: -15px 0px/calc(100% + 25px) calc(100% + 20px) no-repeat;
+    margin-left: 40px;
+    padding: 20px;
+    margin-bottom: 10px;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.blog-card:has(> a.rosa){
+    background-image: url("../assets/post-it-rosa-reto.png");
+}
+.blog-card:has(> a.laranja){
+    background-image: url("../assets/post-it-laranja-reto.png");
+}
+.blog-card:has(> a.verde){
+    background-image: url("../assets/post-it-verde-reto.png");
+}
+.blog-card:has(> a.roxo){
+    background-image: url("../assets/post-it-roxo-reto.png");
+}
+
+#blog-cards-container{
+    min-width: 300px;
+    max-width: 400px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+#blog-cards-container h2{
+    margin-bottom: 5px;
+}
+
+.autorData{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-size: auto;
+    }
+}
+
+

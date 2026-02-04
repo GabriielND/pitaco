@@ -1,0 +1,334 @@
+:root {
+  --triangulo: 22px;
+  --trianguloMobile: 52px;
+  --pixelBlur: 6px;
+}
+
+
+/* --------------------- POST --------------------- */
+article{
+    max-width: 60%;
+    margin-left: 20px;
+}
+
+article h1{
+    margin-bottom: 0px;
+    font: 30px "Mochiy Pop One";
+}
+
+
+.tituloPost{
+    margin-top: 15px;
+}
+
+.infoPost{
+    font: 18px "Skynight";
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+}
+
+.infoPost p{
+    margin: 0px;
+    margin-right: 8px;
+}
+
+.blog-post img{
+    width: 200px;
+    float: left;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding-top: 12px;
+}
+
+.blog-post .musica img{
+    margin-inline: auto;
+    width: 250px;
+    padding-right: 10px;;
+}
+
+.conteudoPost.musica{
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoNota{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.contTexto{
+    background: url("../assets/fundoPapelAmassado.jpg") 0px -10px no-repeat;
+    background-repeat: no-repeat;
+    border-top-right-radius: 30px;
+    max-width: 48%;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.conteudoPost p{
+    margin-top: 10px;
+    padding-top: 12px;
+    font: 20px/29.7px "Skynight";
+}
+
+#spoiler{
+    font-style: normal;
+    filter: blur(var(--pixelBlur));
+}
+
+#nota{
+    margin: 0px;
+    padding-top: 5px;
+    margin-inline: auto;
+    padding-right: 10px;
+    font-family: 'Star Dings';
+    font-size: 30px;
+}
+
+/* .contVoltar{
+    float: right;
+    margin-right: 30%;
+} */
+
+/* .fundoBotao{
+    background: url(../assets/smudge.png) 0px 0px/100% no-repeat;
+    filter: invert(97%) sepia(6%) saturate(6901%) hue-rotate(295deg) brightness(107%) contrast(117%);
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    z-index: -1;
+
+} */
+
+.blog-post .btn{
+    float: right;
+    margin-top: 10px;
+    font: 20px "Skynight";
+    padding: 5px;
+    padding-inline: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.tituloPost{
+    display: flex;
+}
+
+.lingueta{
+    width: 50px;
+    height: 44px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+
+.rosa.btn, .rosa .lingueta{
+    background-color:rgb(255,185,175);
+}
+.laranja.btn, .laranja .lingueta{
+    background-color:rgb(255,204,156);
+}
+.verde.btn, .verde .lingueta{
+    background-color:rgb(188, 234, 184);
+}
+.roxo.btn, .roxo .lingueta{
+    background-color:rgb(221,175,255);
+}
+
+.triangulo{
+    width: 0;
+    height: 0;
+    border-top: var(--triangulo) solid transparent;
+    border-bottom: var(--triangulo) solid transparent;
+    border-left: var(--triangulo) solid #ffa9a9;
+    
+}
+
+.rosa .triangulo{
+    border-left-color: rgb(255,185,175);
+}
+.laranja .triangulo{
+    border-left-color: rgb(255,204,156);
+}
+.verde .triangulo{
+    border-left-color: rgb(188, 234, 184);
+}
+.roxo .triangulo{
+    border-left-color: rgb(221,175,255);
+}
+
+.blog-post h1{
+    background-color: #ffa9a9;
+    width: fit-content;
+    margin: 0px
+}
+
+.rosa h1{
+    background-color:rgb(255,185,175);
+}
+.laranja h1{
+    background-color:rgb(255,204,156);
+}
+.verde h1{
+    background-color:rgb(188, 234, 184);
+}
+.roxo h1{
+    background-color:rgb(221,175,255);
+}
+
+ul{
+    font: 25px "Skynight";
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.favs div{
+    display: flex;
+}
+
+.favs p {
+    font-size: 28px;
+    padding: 0px;
+    margin: 2px;
+}
+
+.musicStar{
+    font-style: normal;
+    font-family: 'Star Dings';
+    margin-right: 5px;
+}
+
+#mencoes{
+    padding-bottom: 20px;
+    border-bottom: 2px groove black;
+}
+
+li{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.track h2{
+    font: 23px "Mochiy Pop One";
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+.track p{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px){
+    :root{
+        --pixelBlur: 10px;
+    }
+
+    .blog-post img{
+        width: 400px;
+        margin-right: 30px;
+    }
+
+    .blog-post .musica img{
+        width: 500px;
+    }
+
+    article{
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .blog-post .btn{
+        font: 50px "Skynight";
+        padding: 10px;
+        padding-inline: 40px;
+        border-radius: 40px;
+        margin-bottom: 100px;
+    }
+
+    .blog-post h1{
+        font-size: 60px;
+        padding-top: 5px;
+    }
+
+    .triangulo{
+        width: 0px;
+        height: 0px;
+        border-top: var(--trianguloMobile) solid transparent;
+        border-bottom: var(--trianguloMobile) solid transparent;
+        border-left: var(--trianguloMobile) solid #ffa9a9;
+    }
+
+    .lingueta{
+        width: 50px;
+        height: 103px;
+        display: block;
+        position: absolute;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .infoPost{
+        display: flex;
+        flex-direction: row;
+        font-size: 37px;
+    }
+
+    .infoPost p{
+        margin: 0px;
+        margin-right: 15px;
+    }
+
+    .conteudoPost p{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    #nota{
+        /* font-size: 60px; */
+        scale: 2;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    ul{
+        margin-bottom: 55px;
+    }
+
+    .favs p {
+        font-size: 60px;
+    }
+
+    .musicStar{
+        font-size: 48px;
+    }
+
+    #mencoes{
+        padding-bottom: 40px;
+        border-bottom: 5px groove black;
+    }
+
+    li{
+        font-size: 48px;
+        margin-top: 12px;
+    }
+
+    .track h2{
+        font: 53px "Mochiy Pop One";
+        margin-bottom: 12px;
+    }
+
+    .track p{
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+}

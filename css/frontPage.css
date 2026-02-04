@@ -1,0 +1,248 @@
+:root {
+  --triangulo: 22px;
+}
+
+@font-face {
+    font-family: 'Star Dings';
+    src: url('../assets/MF Star Dings.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magazine Letter';
+    src: url('../assets/MagazineLetterr.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: url("../assets/papelCaneladoSemLinha.png") 0px 0px/600px;
+}
+
+/* h1{
+    font-family: 'Cherry Bomb One';
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin: 0px;
+    margin-left: 10px;
+    color:burlywood;
+} */
+
+.nav-container img{
+    width: 300px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.nav-links a{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/* --------------------- CARD --------------------- */
+a{  
+    text-decoration: none;
+    font-family: "Skynight";
+    color: black;
+    font-size: 18px;
+}
+
+a:visited{
+    color: black;
+}
+
+.blog-card{
+    margin-inline: 10px;
+    margin-bottom: 30px;
+    width: 450px;
+}
+
+.topoPostIt{
+    width: auto;
+    height: 30px;
+}
+
+.corpoPostIt{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+}
+
+a.rosa .topoPostIt{
+    background-color:rgb(255,145,134);
+}
+a.rosa .corpoPostIt{
+    background-color:rgb(255,185,175);
+    
+}
+a.laranja .topoPostIt{
+    background-color:rgb(255,180,116);
+}
+a.laranja .corpoPostIt{
+    background-color:rgb(255,204,156);
+}
+a.verde .topoPostIt{
+    background-color:rgb(132, 208, 126);
+}
+a.verde .corpoPostIt{
+    background-color:rgb(188, 234, 184);
+}
+a.roxo .topoPostIt{
+    background-color:rgb(192,126,247);
+}
+a.roxo .corpoPostIt{
+    background-color:rgb(221,175,255);
+}
+
+#blog-cards-container{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#blog-cards-container h2{
+    font: 18px "Mochiy Pop One";
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+.cardInfo{
+    display: flex;
+}
+
+.cardInfo img{
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+/* Capa Musica */
+img.rosa{
+    max-width: 150px;
+    height: 100%;
+}
+/* Capa Filme */
+img.laranja{
+    max-width: 130px;
+    height: 100%;
+}
+/* Capa Livro */
+img.verde{
+    max-width: 130px;
+    height: 100%;
+}
+/* Capa Jogo */
+img.roxo{
+    max-width: 135px;
+    height: 100%;
+}
+
+.autorData{
+    display: flex;
+    justify-content: space-between;
+}
+
+#notaCard{
+    font-family: 'Star Dings';
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+.textoCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.textoCard p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    height: 70%;
+}
+
+.textoCard .tags{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-size: 120%;
+        background-clip: border-box;
+    }
+
+    .nav-container img{
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .nav-links a{
+        font-size: 58px;
+    }
+
+    .container{
+        margin-top: 20px;
+    }
+
+    .infoPost small{
+        font-size: 5px;
+    }
+
+    #blog-cards-container{
+        width: 100%;
+    }
+
+    .blog-card{
+        /* margin-inline: 10px;
+        margin-bottom: 30px; */
+        width: 85%;
+    }
+
+    #blog-cards-container h2{
+        font-size: 45px;
+    }
+
+    a {
+        font-size: 40px;
+    }
+
+    .cardInfo img{
+        margin-right: 25px;
+    }
+
+    /* Capa Musica */
+    img.rosa{
+        max-width: 250px;
+        height: 100%;
+    }
+    /* Capa Filme */
+    img.laranja{
+        max-width: 230px;
+        height: 100%;
+    }
+    /* Capa Livro */
+    img.verde{
+        max-width: 230px;
+        height: 100%;
+    }
+    /* Capa Jogo */
+    img.roxo{
+        max-width: 235px;
+        height: 100%;
+    }
+
+    .corpoPostIt{
+        padding: 20px;
+    }
+    
+    #notaCard{
+        scale: 1.7;
+        margin-top: 6px;
+    }
+
+
+}
+
+
