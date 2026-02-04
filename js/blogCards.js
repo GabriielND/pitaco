@@ -19,7 +19,7 @@ blogPosts.forEach(post => {
         corClasse = "roxo"
     }
     blogCardHTML = `
-    <a href="/blog/blog-post.html?slug=${post.slug}" data-link class="${corClasse}">
+    <a href="./blog/blog-post.html?slug=${post.slug}" data-link class="${corClasse}">
         <div class="topoPostIt"></div>
         <div class="corpoPostIt">
             <h2 class="blog-title">${post.title}</h2>
