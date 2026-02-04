@@ -52,7 +52,7 @@ if (!blogPost) {
             </div>
             <p>${blogPost.body}</p>  
         </div>
-        <a href="/index.html" class="btn ${corClasse}" data-link>Voltar</a>
+        <a href="../index.html" class="btn ${corClasse}" data-link>Voltar</a>
         <a class="btn ${corClasse}" onClick="mostraSpoiler()" style="display: ${btnVisivel}; float: left;">Ver Spoiler</a>
         `;
         blogPostContainer.innerHTML = blogPostHTML;
