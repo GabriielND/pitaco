@@ -1,30 +1,30 @@
 
 export const blogPosts = [
-    {
-        'id': 1,
-        'title': 'Virgin',
-        'author': 'Gabe',
-        'date': '06-01-2026',
-        'nota': '10',
-        'body': 'Essa é a review \
-                <ul class="favs"><div><em class="musicStar">t</em><p>Favoritas</p></div>\
-                <li>David</li>\
-                <li>Man of the Year</li>\
-                </ul>\
-                <ul class="favs" id="mencoes"><div><em class="musicStar">p</em><p>Menções Honrosas</p></div>\
-                <li>David</li>\
-                <li>Man of the Year</li>\
-                </ul>\
-                <div class="track">\
-                <h2>David</h2>\
-                <p>SOTY!!!</p></div>\
-                <div class="track">\
-                <h2>David</h2>\
-                <p>SOTY!!!</p></div>',
-        'tags': ['Música', 'Review', 'Álbum'],
-        'slug': 'review-musica',
-        'imagem': 'https://i.scdn.co/image/ab67616d0000b27323d41bf736920a032e222a78',
-    },
+    // {
+    //     'id': 1,
+    //     'title': 'Virgin',
+    //     'author': 'Gabe',
+    //     'date': '06-01-2026',
+    //     'nota': '10',
+    //     'body': 'Essa é a review \
+    //             <ul class="favs"><div><em class="musicStar">t</em><p>Favoritas</p></div>\
+    //             <li>David</li>\
+    //             <li>Man of the Year</li>\
+    //             </ul>\
+    //             <ul class="favs" id="mencoes"><div><em class="musicStar">p</em><p>Menções Honrosas</p></div>\
+    //             <li>David</li>\
+    //             <li>Man of the Year</li>\
+    //             </ul>\
+    //             <div class="track">\
+    //             <h2>David</h2>\
+    //             <p>SOTY!!!</p></div>\
+    //             <div class="track">\
+    //             <h2>David</h2>\
+    //             <p>SOTY!!!</p></div>',
+    //     'tags': ['Música', 'Review', 'Álbum'],
+    //     'slug': 'review-musica',
+    //     'imagem': 'https://i.scdn.co/image/ab67616d0000b27323d41bf736920a032e222a78',
+    // },
     {
         'id': 3,
         'title': 'Escola de Contos Eróticos Para Viúvas',
@@ -43,17 +43,17 @@ export const blogPosts = [
         'slug': 'escola-contos-eroticos-viuvas',
         'imagem': 'https://m.media-amazon.com/images/I/91EZGnLk4QS.jpg',
     },
-    {
-        'id': 4,
-        'title': 'Life Is Strange 2 - Capítulo 3',
-        'author': 'Gabe',
-        'date': '06-01-2026',
-        'nota': '9',
-        'body': 'Every little thing that you say or do, im hung up',
-        'tags': ['Jogo', 'LiS2'],
-        'slug': 'review-jogo',
-        'imagem': 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7p.webp',
-    },
+    // {
+    //     'id': 4,
+    //     'title': 'Life Is Strange 2 - Capítulo 3',
+    //     'author': 'Gabe',
+    //     'date': '06-01-2026',
+    //     'nota': '9',
+    //     'body': 'Every little thing that you say or do, im hung up',
+    //     'tags': ['Jogo', 'LiS2'],
+    //     'slug': 'review-jogo',
+    //     'imagem': 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7p.webp',
+    // },
     {
         'id': 5,
         'title': 'Pillion',
