@@ -4,6 +4,7 @@ const params = new URLSearchParams(window.location.search);
 const slug = params.get("slug");
 const blogPost = blogPosts.find((post) => post.slug === slug);
 const blogPostContainer = document.querySelector("#blogPost");
+const blogPostTitle = document.querySelector("#blogTitle");
 
 const separaPostMusica = blogPost.body.split("###")
 
@@ -56,4 +57,5 @@ if (!blogPost) {
         <a class="btn ${corClasse}" onClick="mostraSpoiler()" style="display: ${btnVisivel}; float: left;">Ver Spoiler</a>
         `;
         blogPostContainer.innerHTML = blogPostHTML;
+        blogPostTitle.innerHTML = blogPost.title;
     }
