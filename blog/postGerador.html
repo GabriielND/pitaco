@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="blogTitle"></title>
+    <script type="module" src="../js/blogPost.js" async></script>
+    <link rel="stylesheet" href="../css/frontPage.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link href="https://fonts.cdnfonts.com/css/comic-cup" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Solitreo&family=Pangolin&family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/skynight" rel="stylesheet">
+</head>
+
+<body>
+    <article>
+    <textarea id="texto" style="width: 600px; height: 500px;"></textarea>
+    <button onclick="gerarPost()">Gerar</button>
+    <button id="addTrack" onclick="addTrack()">Adicionar track</button>
+    <select id="tipoPost" onchange="botoesMusica()">
+        <option value="comum">Review comum</option>
+        <option value="musica">Música</option>
+    </select>
+    <p id="convertido" class="conteudoPost"></p></article>
+</body>
+
+<script>
+    function gerarPost(){
+        textoNovo = ""
+        console.log(document.getElementById("tipoPost").value)
+        if(document.getElementById("tipoPost").value == "comum"){
+            textoNovo = document.getElementById("texto").value.replaceAll("\n", "<br>\\\n                 ").slice(0,-1)
+            document.getElementById("convertido").innerHTML = textoNovo
+        } else if(document.getElementById("tipoPost").value == "musica"){
+            textoNovo = document.getElementById("texto").value.replaceAll("\n", "<br>\\\n                 ").replaceAll("><br>", ">")
+            document.getElementById("convertido").innerHTML = textoNovo.replaceAll(">\\", ">")
+        }
+        navigator.clipboard.writeText(textoNovo);
+    }
+
+    function botoesMusica(){
+        if(document.getElementById("tipoPost").value == "musica"){
+            document.getElementById("addTrack").style = "display: block;"
+        } else{
+            document.getElementById("addTrack").style = "display: none;"
+        }
+    }
+
+    function addTrack(){
+        document.getElementById("texto").value = document.getElementById("texto").value + "\n<div class=\"track\">\n<h2></h2>\n<p></p></div>"
+    }
+</script>
+
+</html>
+
