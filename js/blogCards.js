@@ -10,7 +10,7 @@ blogPosts.forEach(post => {
     let corClasse = ""
     if(post.tags.includes("Música")){
         corClasse = "rosa"
-        preview = post.body.split("<ul")[0]
+        preview = post.body.split("<ul")[0].substring(0,110)
     } else if (post.tags.includes("Filme")){
         corClasse = "laranja"
     } else if (post.tags.includes("Livro")){
