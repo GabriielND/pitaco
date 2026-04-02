@@ -39,10 +39,10 @@
         textoNovo = ""
         console.log(document.getElementById("tipoPost").value)
         if(document.getElementById("tipoPost").value == "comum"){
-            textoNovo = document.getElementById("texto").value.replaceAll("\n", "<br>\\\n                 ").slice(0,-1)
+            textoNovo = document.getElementById("texto").value.replaceAll("\n", "<br>\\\n                 ").replaceAll("'", "\\'").slice(0,-1)
             document.getElementById("convertido").innerHTML = textoNovo
         } else if(document.getElementById("tipoPost").value == "musica"){
-            textoNovo = document.getElementById("texto").value.replaceAll("\n", "<br>\\\n                 ").replaceAll("><br>", ">")
+            textoNovo = document.getElementById("texto").value.replaceAll("\n", "<br>\\\n                 ").replaceAll("><br>", ">").replaceAll("'", "\\'")
             document.getElementById("convertido").innerHTML = textoNovo.replaceAll(">\\", ">")
         }
     }

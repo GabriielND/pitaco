@@ -121,7 +121,7 @@ export const blogPosts = [
                  E até o instrumental vai nessa, brinca nessa linha de ir pra um lado mais triste e um lado mais feliz, o que combina total com a letra</p></div>',
         'tags': ['Música'],
         'slug': 'im-only-fucking-myself',
-        'imagem': 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fuproxx.com%2Fwp-content%2Fuploads%2F2025%2F06%2Flola-young-im-only-fcking-myself.jpg%3Fresize%3D300&f=1&nofb=1&ipt=1f534b1457937d86de153973363bb37264118d3156e6d6eff91526a2e7ea3d0b',
+        'imagem': 'https://cdn1.umg3.net/740-cdn/assets-2025-iofm/img/lola-young-im-only-f**king-myself.jpg',
     },
     {
         'id': 4,
@@ -132,51 +132,51 @@ export const blogPosts = [
         'body': 'Eu sou um grande fã da dicotomia, amo a junção de melodias baladeiras com letras profundas sobre fragilidades e inseguranças, fico muito feliz naquelas palminhas em "Nobody" da Mitski. Também gosto de quando alguém consegue escrever bem sobre esses "sentimentos feios" (inveja, ciúme, raiva, tristeza), a Olivia Rodrigo arrasa nesse quesito. Então esse álbum é um prato cheio pra mim. A "história" dele também me conquistou: cansada de ser sempre uma "artista em ascensão" ela cansou de nunca chegar lá e resolveu fazer um último álbum, chega da falar do glamour de Los Angeles (Starfucker), vamos falar da sujeira do Missouri e de família disfuncional, e ai chega! Claro que, depois desse hit, óbvio que ela não vai parar kkkk mas foi assim que o álbum surgiu, e ele ainda tem esse aura de "ir embora com estilo".<br>\
                  E bota estilo nisso! Lançar 5 singles e TODOS serem bons?? Artista!!! Único problema que eu tenho com esse álbum é a posição dos singles, botar todas as "já conhecidas" no começo atrapalha um pouco flow, devia ter separado elas ao longo do álbum, mas isso fica pro tribunal de minúsculas causas. Sem dúvidas o PIOR álbum da América!<br>\
                  <br>\
-                 <ul class="favs"><div><em class="musicStar">t</em><p>Favoritas</p></div><br>\
-                 <li>BRITTANY MURPHY.</li><br>\
-                 <li>OLD TECHNOLOGY</li><br>\
-                 <li>DANCE...</li><br>\
-                 <li>CANNIBALISM!</li><br>\
-                 <li>BEAT UP CHANEL$</li><br>\
-                 <li>I\'M ACTUALLY KINDA FAMOUS</li><br>\
-                 <li>CRANK</li><br>\
-                 <li>WHAT IS IT LIKE, TO BE LIKED?</li><br>\
-                 <li>$T.LOSER</li><br>\
-                 </ul><br>\
-                 <ul class="favs" id="mencoes"><br>\
-                 <div><em class="musicStar">p</em><p>Menções Honrosas</p></div><br>\
-                 <li>OLD FLING$</li><br>\
-                 <li>YES GODDD</li><br>\
-                 <li>*PRAYER*</li><br>\
-                 </ul><br>\
-                 <div class="track"><br>\
-                 <h2>CANNIBALISM!</h2><br>\
-                 <p>Foi essa que me trouxe pro mundinho slayyyter, ouvi ela pouco depois de sair e fiquei de olho nos singles até sair o álbum, amor a primeira ouvista</p></div><br>\
-                 <div class="track"><br>\
-                 <h2>CRANK</h2><br>\
-                 <p>Achei que não ia gostar dessa pq é muito barulheira, mas eventualmente ela achou o caminho pro meu coração, viva a barulheira!!!</p></div><br>\
-                 <div class="track"><br>\
-                 <h2>GAS STATION</h2><br>\
+                 <ul class="favs"><div><em class="musicStar">t</em><p>Favoritas</p></div>\
+                 <li>BRITTANY MURPHY.</li>\
+                 <li>OLD TECHNOLOGY</li>\
+                 <li>DANCE...</li>\
+                 <li>CANNIBALISM!</li>\
+                 <li>BEAT UP CHANEL$</li>\
+                 <li>I\'M ACTUALLY KINDA FAMOUS</li>\
+                 <li>CRANK</li>\
+                 <li>WHAT IS IT LIKE, TO BE LIKED?</li>\
+                 <li>$T.LOSER</li>\
+                 </ul>\
+                 <ul class="favs" id="mencoes">\
+                 <div><em class="musicStar">p</em><p>Menções Honrosas</p></div>\
+                 <li>OLD FLING$</li>\
+                 <li>YES GODDD</li>\
+                 <li>*PRAYER*</li>\
+                 </ul>\
+                 <div class="track">\
+                 <h2>CANNIBALISM!</h2>\
+                 <p>Foi essa que me trouxe pro mundinho slayyyter, ouvi ela pouco depois de sair e fiquei de olho nos singles até sair o álbum, amor a primeira ouvista</p></div>\
+                 <div class="track">\
+                 <h2>CRANK</h2>\
+                 <p>Achei que não ia gostar dessa pq é muito barulheira, mas eventualmente ela achou o caminho pro meu coração, viva a barulheira!!!</p></div>\
+                 <div class="track">\
+                 <h2>GAS STATION</h2>\
                  <p>A irmã clubber e white trash de emails i cant send (a faixa, n o álbum)<br>\
-                 Alguns pais traem sua mãe, outros te abandonam no posto de gasolina, o importante é fazer uma música boa sobre isso</p></div><br>\
-                 <div class="track"><br>\
-                 <h2>I\'M ACTUALLY KINDA FAMOUS</h2><br>\
-                 <p>oh you know the dj? oh she knows the dj!</p></div><br>\
-                 <div class="track"><br>\
-                 <h2>$T.LOSER</h2><br>\
+                 Alguns pais traem sua mãe, outros te abandonam no posto de gasolina, o importante é fazer uma música boa sobre isso</p></div>\
+                 <div class="track">\
+                 <h2>I\'M ACTUALLY KINDA FAMOUS</h2>\
+                 <p>oh you know the dj? oh she knows the dj!</p></div>\
+                 <div class="track">\
+                 <h2>$T.LOSER</h2>\
                  <p>Fico intrigado se o nome dessa é um leve aceno a ela ter nascido em St Louis... <br>\
-                 E sobre aquilo de "sentimentos feios", acho que essa é o maior exemplo, pq como assim vc fez uma música sobre odiar alguém e querer que essa pessoa de te odeie de volta pra validar seu sentimento??? E ainda faz a música ser incrível???</p></div><br>\
-                 <div class="track"><br>\
-                 <h2>*PRAYER*</h2><br>\
-                 <p>Ah é interlúdio mas é um bom interlúdio, e mixaram bem com Kinda Famous então merece menção honrosa sim</p></div><br>\
-                 <div class="track"><br>\
-                 <h2>BRITTANY MURPHY.</h2><br>\
+                 E sobre aquilo de "sentimentos feios", acho que essa é o maior exemplo, pq como assim vc fez uma música sobre odiar alguém e querer que essa pessoa de te odeie de volta pra validar seu sentimento??? E ainda faz a música ser incrível???</p></div>\
+                 <div class="track">\
+                 <h2>*PRAYER*</h2>\
+                 <p>Ah é interlúdio mas é um bom interlúdio, e mixaram bem com Kinda Famous então merece menção honrosa sim</p></div>\
+                 <div class="track">\
+                 <h2>BRITTANY MURPHY.</h2>\
                  <p>Imagina a última faixa do seu "último" álbum ser uma carta de suicídio e ainda ser super dançante... essa é mulher!!!<br>\
                  Pra mim essa é a melhor letra do álbum, resume todo o tema do álbum e entrega uma ótima conclusão<br>\
-                 Também gosto do detalhe dessa ser a única com ponto final, ela serviu conceito!</p></div',
+                 Também gosto do detalhe dessa ser a única com ponto final, ela serviu conceito!</p></div>',
         'tags': ['Música'],
         'slug': 'worst-girl-in-america',
-        'imagem': 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.yimg.com%2Fny%2Fapi%2Fres%2F1.2%2Fd8htI_LASyehjwvaXSRxFg--%2FYXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MDtjZj13ZWJw%2Fhttps%3A%2F%2Fmedia.zenfs.com%2Fen%2Fvariety.com%2F74d2bf5814df516d2cbb1a7229338b5d&f=1&nofb=1&ipt=c8ea7d2b1e807974d7330bfacbe3cf637a5acda3623d080c6427280d7799f111',
+        'imagem': 'https://s.yimg.com/ny/api/res/1.2/d8htI_LASyehjwvaXSRxFg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MDtjZj13ZWJw/https://media.zenfs.com/en/variety.com/74d2bf5814df516d2cbb1a7229338b5d',
     },
 ];
 
