@@ -13,7 +13,7 @@ let favoritasMusica = "none"
 if(blogPost.tags.includes("Música")){
     corClasse = "rosa"
     favoritasMusica = "block"
-} else if (blogPost.tags.includes("Filme")){
+} else if (blogPost.tags.includes("Filme") || blogPost.tags.includes("Série")){
     corClasse = "laranja"
 } else if (blogPost.tags.includes("Livro")){
     corClasse = "verde" 
