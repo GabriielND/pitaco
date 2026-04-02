@@ -13,9 +13,10 @@
 
 <body>
     <article>
-    <textarea id="texto" style="width: 600px; height: 500px;"></textarea>
+    <textarea id="texto" style="width: 840px; height: 530px; font-size: 16px"></textarea>
     <div>
         <button onclick="gerarPost()">Gerar</button>
+        <button onclick="copiarPost()">Copiar</button>
         <select id="tipoPost" onchange="botoesMusica()">
             <option value="comum">Review comum</option>
             <option value="musica">Música</option>
@@ -26,7 +27,7 @@
             <button id="addSpoiler" onclick='addMarks("<em id=\"spoiler\"></em>")'>Adicionar spoiler</button>
         </div>
     </div>
-        <p id="convertido" class="conteudoPost"></p></article>
+        <p id="convertido" class="conteudoPost" style="font: 20px/29.7px 'Skynight'"></p></article>
 </body>
 
 <script>
@@ -44,6 +45,9 @@
             textoNovo = document.getElementById("texto").value.replaceAll("\n", "<br>\\\n                 ").replaceAll("><br>", ">")
             document.getElementById("convertido").innerHTML = textoNovo.replaceAll(">\\", ">")
         }
+    }
+
+        function copiarPost(){
         navigator.clipboard.writeText(textoNovo);
     }
 
