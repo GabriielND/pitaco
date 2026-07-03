@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Solitreo&family=Pangolin&family=Cherry+Bomb+One&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/skynight" rel="stylesheet">
+    <link rel="image_src" href="../assets/cardeniLogo.png" />
+    <meta name="twitter:image" property="og:image" content="../assets/cardeniLogo.png" />
 </head>
 
 <body>
@@ -28,17 +30,17 @@
         <p></p>
     </footer>
 
-    <script>
-        function mostraSpoiler(){
-            if(document.getElementById('spoiler').style.filter == "blur(0px)"){
-                document.getElementById('spoiler').style.cssText = "filter: blur(var(--pixelBlur));"
-            } else {
-                document.getElementById('spoiler').style.cssText = "filter: blur(0px);"
-            }
-        }
-    </script>
-
 </body>
+
+<script>
+    function mostraSpoiler(){
+        if(document.getElementById('spoiler').style.filter == "blur(0px)"){
+            document.getElementById('spoiler').style.cssText = "filter: blur(var(--pixelBlur));"
+        } else {
+            document.getElementById('spoiler').style.cssText = "filter: blur(0px);"
+        }
+    }
+</script>
 
 </html>
 

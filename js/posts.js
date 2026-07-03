@@ -178,5 +178,23 @@ export const blogPosts = [
         'slug': 'worst-girl-in-america',
         'imagem': 'https://s.yimg.com/ny/api/res/1.2/d8htI_LASyehjwvaXSRxFg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MDtjZj13ZWJw/https://media.zenfs.com/en/variety.com/74d2bf5814df516d2cbb1a7229338b5d',
     },
+    {
+        'id': 5,
+        'title': 'God of War (2005)',
+        'author': 'Gabe',
+        'date': '03-07-2026',
+        'nota': '8',
+        'body': 'Mitologia grega freestyle!<br>\
+                 Primeiro assunto que eu tenho que falar desse jogo é o combate, até pq é literalmente a primeira coisa que o jogo te manda fazer: bater. Eu a-do-rei o combate desse jogo, de cara eu achei que seria só ficar apertando botão, batendo e batendo e batendo (oq eu já gosto), mas ele tem *mecânicas* que te impedem de spammar ataque. Os inimigos *defendem* e se você continuar batendo neles, eles revidam e ou você defende, ou você sai da frente pq eles VÃO te atacar, e eu achei isso genial.<br>\
+                 Achei curioso que ele tem poucos chefões, é basicamente só o Minotauro e o Ares, imaginei que teriam outros, mas sendo sincero os maiores desafios foram as hordas de inimigos, principalmente aquela logo antes da caixa de Pandora.<br>\
+                 Inclusive uma das PIORES partes e que me estressou muito foram aquelas serras do Hades, achei a mecânica de se equilibrar HORRÍVEL, e com aquelas serras era literalmente o inferno, as vezes você vai bem antes da serra passar e NÃO TINHA como sobreviver, você ia subir, a serra ia te pegar e você IA morrer e recomeçar tudo. Essa comparação vale até pro final mesmo, achei o Ares ridículo de fácil, a parte de derrotar 300 Kratos que realmente é o desafio.<br>\
+                 Aproveitando, vamos falar da história. Acho que essa era do PS1/PS2 foram os primeiros passos de jogos com narrativas, histórias mais profundas, e consigo entender pq God Of War é um dos grandes dessa era. Quando eles revelaram que <em id="spoiler">a pele do Kratos é branca pq são as CINZAS da FAMÍLIA DELE que o Ares OBRIGOU ele a MATAR e ainda fez isso pra ele nunca esquecer desse dia... </em>uau, eu fiquei em choque. O jogo começar com ele se jogando do penhasco também é meio chocante, principalmente quando eles fecham o verso e você volta pra esse ponto. A jornada e história do Kratos é muito interessante, apesar de alguns pontos serem meio fracos (afinal é um enredo de jogo de video game dos anos 2000, não um vencedor do Pulitzer), e a relação dele com o Ares é bem feita, agora, a mitologia grega...<br>\
+                 Eles jogaram tudo pro alto, o Ares parece mais o Hades do que o Hades do jogo, que ficou parecendo um Belzebu qualquer, a caixa de Pandora não tem NADA a ver com o mito, eles só pegaram o nome mesmo. O Cérbero sem um inimigo comum (e insuportável) e o Minotauro defendendo o templo de Hades também foi algo... mas por mim tá ótimo!!! Se eu quisesse mitologia grega totalmente fiel eu vou ler Percy Jackson (/jk).<br>\
+                 No geral, adorei o jogo, gostei da história, mas desculpa não vou fazer um new game+ pra descobrir mais da história, no máximo eu faço o trial dos deuses (e se bobear nem isso, parei no desafio 8 e to com 0 vontade de terminar). Ansioso pra jogar os próximos God of War.',
+        'tags': ['Jogo', 'Spoilers'],
+        'slug': 'god-of-war',
+        'imagem': 'https://upload.wikimedia.org/wikipedia/pt/thumb/5/53/God_of_War_2005_capa.png/330px-God_of_War_2005_capa.png',
+    },
+    
 ];
 
