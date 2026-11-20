@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title id="blogTitle">Pillion</title>
+    <script type="module" src="../js/blogPost.js" async=""></script>
+    <link rel="stylesheet" href="../css/frontPage.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link href="https://fonts.cdnfonts.com/css/comic-cup" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&amp;family=Solitreo&amp;family=Pangolin&amp;family=Cherry+Bomb+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/skynight" rel="stylesheet">
+    <link rel="image_src" href="../assets/cardeniLogo.png">
+    <meta property="og:site_name" content="Pitaco">
+    <meta property="og:type" content="article">
+    <meta property="twitter:card" content="summary">
+    <meta property="title" content="Pillion">
+    <meta property="description" content="Me surpeendeu! Achei que ia ser só putaria o filme inteiro, mas ele tem uma história! E é uma história muito boa, sobre limites pessoais!                &lt;br&gt;O filme trabalha a relação deles com muito cuidado, é um trabalho muito bonito e muito envolvente. É uma história num nicho específico, um micr[...]">
+    <meta property="og:title" content="Pillion">
+    <meta property="og:image" content="https://image.tmdb.org/t/p/original/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg">
+    <meta property="og:description" content="Me surpeendeu! Achei que ia ser só putaria o filme inteiro, mas ele tem uma história! E é uma história muito boa, sobre limites pessoais!                &lt;br&gt;O filme trabalha a relação deles com muito cuidado, é um trabalho muito bonito e muito envolvente. É uma história num nicho específico, um micr[...]">
+    <meta property="og:url" content="https://pitaco.blog.br/blog/blog-post.html?slug=pillion">
+    <meta property="twitter:title" content="Pillion">
+    <meta property="twitter:image" content="https://image.tmdb.org/t/p/original/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg">
+    <meta property="twitter:description" content="Me surpeendeu! Achei que ia ser só putaria o filme inteiro, mas ele tem uma história! E é uma história muito boa, sobre limites pessoais!                &lt;br&gt;O filme trabalha a relação deles com muito cuidado, é um trabalho muito bonito e muito envolvente. É uma história num nicho específico, um micr[...]">
+    <meta property="twitter:url" content="https://pitaco.blog.br/blog/blog-post.html?slug=pillion">
+</head>
+
+<body class="vc-init">
+    <header>
+        <nav class="nav-container">
+            <img src="../assets/cardeniLogo.png">
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="blog-post" id="blogPost">
+            <div class="tituloPost laranja">
+                <div class="lingueta"></div>
+                <h1>Pillion </h1>
+                <div class="triangulo"></div>
+            </div>
+            <div class="infoPost">
+                <p class="author">Gabe;</p>
+                <p class="date">13-01-2026;</p>
+                <p class="tags">Filme;</p>
+            </div>
+            <div class="conteudoPost filme">
+                <div class="fotoNota">
+                    <img class="imgPost filme" src="https://image.tmdb.org/t/p/original/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg">
+                    <p id="nota" class="filme" style="
+                background: linear-gradient(to right, #000 85.5%, #3e3e3e48 0%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">ttttt</p>
+                </div>
+                <p>Me surpeendeu! Achei que ia ser só putaria o filme inteiro, mas ele tem uma história! E é uma história muito boa, sobre limites pessoais! <br>O filme trabalha a relação deles com muito cuidado, é um trabalho muito bonito e muito envolvente. É uma história num nicho específico, um microcosmo, mas eu senti a importância daquilo, tanto que na hora do climax dá pra sentir oq tá em jogo ali, eu realmente fiquei tenso, mesmo que numa visão seja uma coisa ínfima, pra aqueles personagens é importante.<br> Gosto do "argumento" do filme, os pais dele são uma ótima adição, eles não vem pra "vilanizar" ou condenar eles, mas eles trazem um contraponto muito bem colocado, e o final é uma ótima conclusão pra esse argumento.<br> No geral, é uma história muito boa, bem trabalhada e feita com o cuidado que precisa.</p>
+            </div>
+            <a href="../index.html" class="btn laranja" data-link="">Voltar</a>
+            <a class="btn laranja" onclick="mostraSpoiler()" style="display: none; float: left;">Ver Spoiler</a>
+        </article>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+
+    <script>
+        function mostraSpoiler(){
+            if(document.getElementById('spoiler').style.filter == "blur(0px)"){
+                document.getElementById('spoiler').style.cssText = "filter: blur(var(--pixelBlur));"
+            } else {
+                document.getElementById('spoiler').style.cssText = "filter: blur(0px);"
+            }
+        }
+    </script>
+
+</body>
+
+</html>

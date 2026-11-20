@@ -19,8 +19,9 @@ blogPosts.forEach(post => {
         corClasse = "roxo"
         preview = post.body.substring(0, 150)
     }
+    ///blog/blog-post.html?slug=
     blogCardHTML = `
-    <a href="./blog/blog-post.html?slug=${post.slug}" data-link class="${corClasse}">
+    <a href="./posts/${post.slug}.html" data-link class="${corClasse}">
         <div class="topoPostIt"></div>
         <div class="corpoPostIt">
             <h2 class="blog-title">${post.title}</h2>
