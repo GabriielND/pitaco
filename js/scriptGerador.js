@@ -2,9 +2,23 @@ window.onload = function() {
         botoesMusica()
 }
 
+// Pass the checkbox name to the function
+function getCheckedBoxes(chkboxName) {
+  var checkboxes = document.getElementsByName(chkboxName);
+  var checkboxesChecked = [];
+  // loop over them all
+  for (var i=0; i<checkboxes.length; i++) {
+     // And stick the checked ones onto an array...
+     if (checkboxes[i].checked) {
+        checkboxesChecked.push("'" + checkboxes[i].value + "'");
+     }
+  }
+  // Return the array if it is non-empty, or null
+  return checkboxesChecked.length > 0 ? checkboxesChecked : null;
+}
+
 function gerarPost(){
     textoNovo = ""
-    console.log(document.getElementById("tipoPost").value)
     if(document.getElementById("tipoPost").value == "comum"){
         textoNovo = document.getElementById("texto").value.replaceAll("\n", "<br>\\\n                 ").replaceAll("'", "\\'")
         document.getElementById("convertido").innerHTML = textoNovo
@@ -12,10 +26,28 @@ function gerarPost(){
         textoNovo = document.getElementById("texto").value.replaceAll("\n", "<br>\\\n                 ").replaceAll("><br>", ">").replaceAll("'", "\\'")
         document.getElementById("convertido").innerHTML = textoNovo.replaceAll(">\\", ">")
     }
+    return textoNovo
 }
 
 function copiarPost(){
-    navigator.clipboard.writeText(textoNovo);
+    basePost = `{
+        'id': <id>>,
+        'title': '<titulo>',
+        'author': 'Gabe',
+        'date': '<data>',
+        'nota': '<nota>',
+        'body': '<corpo>',
+        'tags': <tags>,
+        'slug': '<slug>',
+        'imagem': '<imagem>',
+    }`
+    textoNovo = document.getElementById("texto").value
+    basePost = basePost.replaceAll("<titulo>", document.getElementById("titulo").value)
+    basePost = basePost.replaceAll("<corpo>", gerarPost())
+    textoTags = getCheckedBoxes("tags");
+    basePost = basePost.replaceAll("<tags>", "[" + textoTags + "]")
+    console.log(basePost)
+    navigator.clipboard.writeText(basePost);
 }
 
 function botoesMusica(){
