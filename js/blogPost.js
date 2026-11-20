@@ -58,4 +58,25 @@ if (!blogPost) {
         `;
         blogPostContainer.innerHTML = blogPostHTML;
         blogPostTitle.innerHTML = blogPost.title;
+
+        const nome = document.createElement('meta');
+        nome.setAttribute("property", "og:title")
+        nome.content = blogPost.title;
+        document.getElementsByTagName('head')[0].appendChild(nome);
+
+        const imagem = document.createElement('meta');
+        imagem.setAttribute("property", "og:image")
+        imagem.content = blogPost.imagem;
+        document.getElementsByTagName('head')[0].appendChild(imagem);
+
+        const descricao = document.createElement('meta');
+        descricao.setAttribute("property", "og:description")
+        descricao.content = blogPost.body.substring(0,300).replaceAll("<br>                 ", "\n") + "[...]";
+        document.getElementsByTagName('head')[0].appendChild(descricao);
+
+        const site = document.createElement('meta');
+        site.setAttribute("property", "og:url")
+        site.content = "https://pitaco.blog.br/blog/blog-post.html?slug=" + blogPost.slug;
+        document.getElementsByTagName('head')[0].appendChild(site);
+
     }
