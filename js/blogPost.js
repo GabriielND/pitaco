@@ -59,10 +59,23 @@ if (!blogPost) {
         blogPostContainer.innerHTML = blogPostHTML;
         blogPostTitle.innerHTML = blogPost.title;
 
-        const nome = document.createElement('meta');
-        nome.setAttribute("property", "og:title")
-        nome.content = blogPost.title;
-        document.getElementsByTagName('head')[0].appendChild(nome);
+
+        //Meta Tags - Primary
+        const tituloPrimary = document.createElement('meta');
+        tituloPrimary.setAttribute("property", "title")
+        tituloPrimary.content = blogPost.title;
+        document.getElementsByTagName('head')[0].appendChild(tituloPrimary);
+
+        const descricaoPrimary = document.createElement('meta');
+        descricaoPrimary.setAttribute("property", "description")
+        descricaoPrimary.content = blogPost.body.substring(0,300).replaceAll("<br>                 ", "\n") + "[...]";
+        document.getElementsByTagName('head')[0].appendChild(descricaoPrimary);
+
+        //Meta Tags - Facebook/Open Graph
+        const titulo = document.createElement('meta');
+        titulo.setAttribute("property", "og:title")
+        titulo.content = blogPost.title;
+        document.getElementsByTagName('head')[0].appendChild(titulo);
 
         const imagem = document.createElement('meta');
         imagem.setAttribute("property", "og:image")
@@ -78,5 +91,26 @@ if (!blogPost) {
         site.setAttribute("property", "og:url")
         site.content = "https://pitaco.blog.br/blog/blog-post.html?slug=" + blogPost.slug;
         document.getElementsByTagName('head')[0].appendChild(site);
+
+        //Meta Tags - Twitter
+        const nomeTt = document.createElement('meta');
+        nomeTt.setAttribute("property", "twitter:title")
+        nomeTt.content = blogPost.title;
+        document.getElementsByTagName('head')[0].appendChild(nomeTt);
+
+        const imagemTt = document.createElement('meta');
+        imagemTt.setAttribute("property", "twitter:image")
+        imagemTt.content = blogPost.imagem;
+        document.getElementsByTagName('head')[0].appendChild(imagemTt);
+
+        const descricaoTt = document.createElement('meta');
+        descricaoTt.setAttribute("property", "twitter:description")
+        descricaoTt.content = blogPost.body.substring(0,300).replaceAll("<br>                 ", "\n") + "[...]";
+        document.getElementsByTagName('head')[0].appendChild(descricaoTt);
+
+        const siteTt = document.createElement('meta');
+        siteTt.setAttribute("property", "twitter:url")
+        siteTt.content = "https://pitaco.blog.br/blog/blog-post.html?slug=" + blogPost.slug;
+        document.getElementsByTagName('head')[0].appendChild(siteTt);
 
     }
