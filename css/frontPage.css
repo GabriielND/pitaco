@@ -155,12 +155,15 @@ img.roxo{
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .textoCard p{
     margin-bottom: 0px;
     margin-top: 10px;
     height: 70%;
+    overflow: clip;
+    max-height: 130px;
 }
 
 .textoCard .tags{
@@ -209,6 +212,7 @@ img.roxo{
     }
 
     .cardInfo img{
+        margin: auto;
         margin-right: 25px;
     }
 
@@ -241,6 +245,14 @@ img.roxo{
         scale: 1.7;
         margin-top: 6px;
         padding-right: 1px;
+    }
+
+    .textoCard p{
+        max-height: 240px;
+    }
+
+    .rosa .textoCard p{
+        max-height: 190px;
     }
 
 

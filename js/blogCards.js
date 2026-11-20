@@ -6,7 +6,7 @@ blogPosts.forEach(post => {
     const blogCard = document.createElement("div"); blogCard.classList.add("blog-card"); blogCard.setAttribute("data-id", post.id);
     const fillEstrela = parseInt(post.nota) * 10
     let blogCardHTML
-    let preview = post.body.substring(0, 150)
+    let preview = post.body.substring(0, 180)
     let corClasse = ""
     if(post.tags.includes("Música")){
         corClasse = "rosa"
@@ -17,6 +17,7 @@ blogPosts.forEach(post => {
         corClasse = "verde" 
     } else if (post.tags.includes("Jogo")){
         corClasse = "roxo"
+        preview = post.body.substring(0, 150)
     }
     blogCardHTML = `
     <a href="./blog/blog-post.html?slug=${post.slug}" data-link class="${corClasse}">
