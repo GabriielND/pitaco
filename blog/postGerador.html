@@ -13,6 +13,22 @@
 
 <body>
     <article>
+    <label style="font-family: Skynight;" for="titulo">Título: </label>
+    <input style="width: 400px;" type="text" id="titulo">
+    <form style="font-family: Skynight;">
+        <input type="checkbox" name="tags" value="Música">
+        <label for="musica">Música</label>
+        <input type="checkbox" name="tags" value="Filme">
+        <label for="filme">Filme</label>
+        <input type="checkbox" name="tags" value="Livro">
+        <label for="livro">Livro</label>
+        <input type="checkbox" name="tags" value="Jogo">
+        <label for="jogo">Jogo</label>
+        <input type="checkbox" name="tags" value="Spoilers">
+        <label for="spoilers">Spoilers</label>
+        <input type="text" name="tags">
+        <label for="outros">Outros</label>
+    </form>
     <textarea id="texto" style="width: 840px; height: 530px; font-size: 16px"></textarea>
     <div>
         <button onclick="gerarPost()">Gerar</button>
